@@ -1,4 +1,3 @@
-"""
 # TradeLab-X
 
 **TradeLab-X** is a modular trading research and execution framework focused on engineering-driven analysis of price action and volume behavior. 
