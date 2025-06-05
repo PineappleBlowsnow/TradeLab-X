@@ -17,11 +17,25 @@ It bridges academic technical analysis with real-time automated execution via IB
 - `backtest/`: Strategy evaluation and historical testing
 - `live/`: IBKR API connection, real-time data, order execution
 - `data/`: Data ingestion from IB, Yahoo Finance, or custom feeds
+- `config/`: Central configuration for connection and trading parameters
+- `utils/`: Shared helpers such as the project logger
+- `research/`: Notebooks and experiments
+- `ibkr_trading/`: Minimal IBKR trading framework with connector, strategy, risk, and execution modules
+
+The repository now ships with skeleton implementations for these directories so you can extend them easily.
 
 ## Setup
 ```bash
 pip install -r requirements.txt
 ```
+
+### Quick Start
+Run a demo trade using the sample SMA strategy:
+```bash
+python -m ibkr_trading.main
+```
+
+
 
 ## Roadmap
 - [x] Core signal detectors (volume spike, support/resistance)
